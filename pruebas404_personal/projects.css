@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+#content{
+
+
+    margin-left: 20px ;
+    margin-right: 30px;
+}
+#navlogo{
+    width: 70px;
+    height: 70px;
+}
+
+.nav-item a{
+    font-size: 30px;
+}
+.container{
+    background-color: white;
+}
+/* Contenedor para centrar la imagen (opcional) */
+.contenedor-animacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/* --- La animación en sí --- */
+
+/* 1. Definimos los pasos de la animación "pulso" */
+@keyframes pulso {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: scale(1.1); /* 10% más grande */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño normal */
+  }
+}
+
+/* 2. Aplicamos la animación a nuestra imagen */
+#logo {
+  /* La línea clave: nombre | duración | timing-function | repetición */
+  animation: pulso 2s ease-in-out infinite;
+}
+
+
+#presentacion{
+    margin-top: 10px;
+}
+h1 {
+    font-size: 75px;
+}
+.contenedor-imagen {
+  text-align: center;
+}
+#logo{
+    width: 200px;
+    height: 200px;
+}
+#intro{
+    font-size: 20px;
+}
+#nosotros{
+    margin-top: 30px;
+    padding: 10px;
+}
+h3{
+    font-size: 50px;
+    padding: 10px;
+}
+.nosotros {
+    font-size: 25px;     
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+    padding-left: 10;
+    padding-right: 10px;
+
+}
+
+
+
+h2{
+    font-size: 50px;
+}
+
+.btn {
+    border-radius: 10%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 25px;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+    z-index: 10;
+}
+a{
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+    z-index: 10;
+}
